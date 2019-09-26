@@ -45,3 +45,36 @@ element.scss具体模块的css
 
 
  -->
+
+ <!-- 自适应 
+ 
+ css像素、设备像素、逻辑像素、设备像素比：物理像素与css像素的比值dpr
+
+
+ viewport
+
+ viewport可以分三类
+ layoutviewport  viewviewport可视区域    idolviewport手机边框
+
+ <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui">
+
+利用viewport和设备像素比调整基准像素
+
+
+ rem
+ 利用px2rem自动转换css单位
+
+ -->
+
+ <!-- spa单页面设计
+ 
+ 前后端分离
+ 减轻服务器压力
+ 增强用户体验
+ 需要prerender预渲染优化seo
+ 
+ 工作原理
+ History Api  onpopstate响应页面的前进后退  pushState创建历史记录
+ Hash  location.hash  haschange
+ 
+  -->
