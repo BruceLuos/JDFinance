@@ -1,11 +1,17 @@
 <template lang="html">
     <div :class="$style.home">
         <h1>Home</h1>
+        
     </div>
+    
 </template>
 
 <script>
+import btn from '../core/btn'
 export default {
+  components:{
+    btn
+  }
 }
 </script>
 
