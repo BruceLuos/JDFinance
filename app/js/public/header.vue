@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style lang="scss" module>
-// css module 
+// css module
 // 图片作为背景
 // 使用float
   .header{

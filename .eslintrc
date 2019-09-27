@@ -1,0 +1,8 @@
+{
+  // 代码规则
+  
+  "plugins": [
+    "html"
+  ],
+  "parser": "babel-eslint"
+}

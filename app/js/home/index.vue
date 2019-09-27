@@ -1,16 +1,19 @@
 <template lang="html">
     <div>
         <Header/>
+        <Slider/>
     </div>
-    
+
 </template>
 
 <script>
-import Header from '../public/header'
+import Header from "../public/header"
+import Slider from '../home/hslider'
 export default {
-  components:{
-    Header
-  }
+    components: {
+        Header,
+        Slider
+    },
 }
 </script>
 

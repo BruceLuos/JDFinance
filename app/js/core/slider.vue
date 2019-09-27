@@ -1,44 +1,48 @@
 <template>
     <section :class="cname">
         <swiper :options="options" :not-next-tick="options.notNextTick">
-            <swiper-slide v-for="item in items" :key="item.href">
-                <router-link to="item.href">
-                     <img :src="item.src" alt="this is a picture">
+            <swiper-slide v-for="item in items" :key="item.id">
+                <router-link :to="{ name: item.href}">
+                    <img :src="item.src" alt="this is a picture">
                 </router-link>
             </swiper-slide>
         </swiper>
-        <div class="swiper-pagination" v-if="options.pagenation"></div>
+        <div v-if="options.pagenation" class="swiper-pagination"/>
     </section>
 </template>
 
 <script>
-import { swiper, swiperSlide} from "vue-awesome-swiper"
+import { swiper, swiperSlide } from "vue-awesome-swiper"
 export default {
-    components:{
+    components: {
         swiper,
-        swiperSlide
+        swiperSlide,
     },
-    props:{
-        options:{
-            type:Object,
+    props: {
+        options: {
+            type: Object,
             default() {
                 return {
                     autoplay: true,
                     loop: true,
                     pagination: {
-                        el:".swiper-pagination"
+                        el: ".swiper-pagination",
                     },
-                    notNextTick: false
+                    notNextTick: false,
                 }
-            }
+            },
         },
-        items:{
+        items: {
             type: Array,
             default() {
                 return []
-            }
+            },
+        },
+        cname:{
+            type: String,
+            default: ""
         }
-    }
+    },
 }
 </script>
 <style lang='scss'>

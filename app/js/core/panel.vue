@@ -1,28 +1,28 @@
 <template>
-  <section :class="[panelClass,cname]">
-      <h4>-{{title}}-</h4>
-      <!-- <div>{{content}}</div> -->
-      <slot/>
-  </section>
+    <section :class="[panelClass,cname]">
+        <h4>-{{ title }}-</h4>
+        <!-- <div>{{content}}</div> -->
+        <slot/>
+    </section>
 </template>
 
 <script>
 export default {
-    props:{
-        cname:{
+    props: {
+        cname: {
             type: String,
-            default: ""
+            default: "",
         },
-        title:{
+        title: {
             type: String,
-            default: ""
-        }
+            default: "",
+        },
     },
     data() {
         return {
-            panelClass: 'panel'
+            panelClass: "panel",
         }
-    }
+    },
 }
 </script>
 <style lang='scss'>

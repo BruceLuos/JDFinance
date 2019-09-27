@@ -1,25 +1,25 @@
 <!--  -->
 <template>
-  <div :class="[btnClass,cname]">
-      <slot/>
-  </div>
+    <div :class="[btnClass,cname]">
+        <slot/>
+    </div>
 </template>
 
 <script>
 
 export default {
-    props:{
+    props: {
         cname: {
             type: String,
-            default: ""
+            default: "",
+        },
+    },
+    data() {
+        return {
+            btnClass: "btn",
         }
     },
-    data (){
-        return {
-            btnClass: "btn"
-        }
-    }
- 
+
 }
 </script>
 <style lang='scss'>
