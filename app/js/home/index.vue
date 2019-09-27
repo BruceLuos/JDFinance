@@ -1,24 +1,18 @@
 <template lang="html">
-    <div :class="$style.home">
-        <h1>Home</h1>
-        
+    <div>
+        <Header/>
     </div>
     
 </template>
 
 <script>
-import btn from '../core/btn'
+import Header from '../public/header'
 export default {
   components:{
-    btn
+    Header
   }
 }
 </script>
 
 <style lang="scss" module>
-  @import '../../css/reset.scss';
-  .home{
-    color: red;
-    font-size: 80px;
-  }
 </style>
