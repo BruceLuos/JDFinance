@@ -2,7 +2,7 @@
     <section :class="cname">
         <swiper :options="options" :not-next-tick="options.notNextTick">
             <swiper-slide v-for="item in items" :key="item.id">
-                <router-link :to="{ name: item.href}">
+                <router-link :to="item.href">
                     <img :src="item.src" alt="this is a picture">
                 </router-link>
             </swiper-slide>
