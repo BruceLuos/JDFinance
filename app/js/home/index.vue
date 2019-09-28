@@ -3,6 +3,8 @@
         <Header/>
         <Slider/>
         <Novice/>
+        <Borrow/>
+        <Money/>
     </div>
 
 </template>
@@ -11,11 +13,15 @@
 import Header from "../public/header"
 import Slider from '../home/hslider'
 import Novice from '../home/novice'
+import Borrow from '../home/borrow'
+import Money from '../home/money'
 export default {
     components: {
         Header,
         Slider,
-        Novice
+        Novice,
+        Borrow,
+        Money
     },
 }
 </script>
