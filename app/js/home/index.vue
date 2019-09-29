@@ -6,6 +6,7 @@
         <Borrow/>
         <Money/>
         <Product/>
+        <Life/>
     </div>
 
 </template>
@@ -17,6 +18,7 @@ import Novice from '../home/novice'
 import Borrow from '../home/borrow'
 import Money from '../home/money'
 import Product from '../home/product'
+import Life from '../home/life'
 export default {
     components: {
         Header,
@@ -24,7 +26,8 @@ export default {
         Novice,
         Borrow,
         Money,
-        Product
+        Product,
+        Life
     },
 }
 </script>
