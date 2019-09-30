@@ -8,6 +8,7 @@
         <Product/>
         <Life/>
         <Footer/>
+        <Navbar/>
     </div>
 
 </template>
@@ -21,6 +22,7 @@ import Money from '../home/money'
 import Product from '../home/product'
 import Life from '../home/life'
 import Footer from '../public/footer'
+import Navbar from '../public/navbar'
 export default {
     components: {
         Header,
@@ -30,7 +32,8 @@ export default {
         Money,
         Product,
         Life,
-        Footer
+        Footer,
+        Navbar
     },
 }
 </script>
