@@ -38,6 +38,7 @@ export default {
       font-size: 28px;
       color: #333;
       em{
+          //箭头
         color: #ddd;
         float: right;
         margin-right: 20px;
