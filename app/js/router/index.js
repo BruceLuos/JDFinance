@@ -4,6 +4,7 @@ import Home from "../home/index.vue"
 import Money from '../money/index'
 import Ious from '../ious/index'
 import Raise from '../raise/index'
+import Download from '../special/download'
 import "../../css/reset.scss"
 Vue.use(Router)
 
@@ -25,6 +26,10 @@ export default new Router({
             path:'/raise',
             name:"raise",
             component: Raise
+        },{
+            path:'/download',
+            name:'download',
+            component: Download
         }
     ],
 })
