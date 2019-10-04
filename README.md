@@ -79,3 +79,13 @@ element.scss具体模块的css
  Hash  location.hash  haschange
  
   -->
+
+  <!-- 上线指导
+生产构建
+合并style和javascript
+抽取 样式要从javascript中抽取出来
+压缩 js css都要压缩   css-loader本就有一个压缩minimize
+调试 source map 能在线上更容易地追踪错误和警告
+
+
+   -->
