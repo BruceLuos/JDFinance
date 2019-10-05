@@ -2,7 +2,7 @@
 
 #### 介绍
 京东金融webapp
- ![Image text]https://gitee.com/BruceLluo/img-folder/raw/master/%E4%BA%AC%E4%B8%9C%E9%87%91%E8%9E%8D%E9%A6%96%E9%A1%B5.png
+ ![Image text](https://gitee.com/BruceLluo/img-folder/raw/master/%E4%BA%AC%E4%B8%9C%E9%87%91%E8%9E%8D%E9%A6%96%E9%A1%B5.png)
 #### 软件架构
 软件架构说明
 <!-- css模板化设计
