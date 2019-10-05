@@ -13,6 +13,7 @@ module.exports = (env) => {
         new webpack.NamedModulesPlugin(),
         new webpack.HotModuleReplacementPlugin(),
     ]
+    // 生产环境时添加使用新的插件
     if (env.production) {
         plugins.push(
             new webpack.DefinePlugin({
@@ -20,6 +21,7 @@ module.exports = (env) => {
                     NODE_ENV: "\"production\"",
                 },
             }),
+            // 单独一个css
             new ExtractTextPlugin("style.css", { ignoreOrder: true })
         )
     }

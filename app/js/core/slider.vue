@@ -17,7 +17,7 @@ export default {
     components: {
         swiper,
         swiperSlide,
-    },
+},
     props: {
         options: {
             type: Object,
